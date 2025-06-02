@@ -1,5 +1,9 @@
 function pop_up() {
-  window.open("../web_20240971/popup/popup.html", "팝업테스트", "width=400,height=300,left=10");
+    var cookieCheck = getCookie("popupYN");
+    if (cookieCheck != "N") {
+        window.open("../web_20240971/popup/popup.html", "팝업테스트", "width=400,height=300,left=10");
+    }
+  
 }
 
 function show_clock(){
@@ -40,3 +44,33 @@ const over = (obj) => {
 const out = (obj) => {
     obj.src="image/LOGO2.png";
 };
+
+function setCookie(name, value, expiredays) {
+    var cookie = new Date();
+    DataTransfer.setDate(date.getDate() + expiredays);
+    document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString() + "; path=/";
+}
+
+function getCookie(name) {
+    var cookie = document.cookie;
+    console.log("쿠키를 요청합니다.");
+    if (cookie != "") {
+        var cookie_array = cookie.split("; ");
+        for (var index in cookie_array) {
+            var cookie_name = cookie_array[index].split("=");
+
+            if (cookie_name[0] == "popupYN") {
+                return cookie_name[1];
+            }
+        }
+    }
+    return ;
+}
+
+function closePopup() {
+    if (document.getElementById('check_popup').value) {
+        setCookie("popupYN", "N", 1);
+        console.log("쿠키를 설정합니다.");
+        self.close();
+    }
+}
