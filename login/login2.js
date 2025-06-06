@@ -1,3 +1,4 @@
+
 import { session_set, session_get, session_check } from './session.js';
 import { encrypt_text, decrypt_text } from './crypto.js';
 import { generateJWT, checkAuth } from './jwt_token.js';
@@ -146,6 +147,10 @@ const check_xss = (input) => {
 }
 
 function init() {
+    document.addEventListener('DOMContentLoaded', () => {
+        checkAuth();
+        init_logined();
+    });
     const emailInput = document.getElementById('typeEmailX');
     const idsave_check = document.getElementById('idSaveCheck');
     let get_id = getCookie("id");
@@ -156,9 +161,6 @@ function init() {
     }
     session_check();
 }
-document.addEventListener('DOMContentLoaded', () => {
-    init();
-});
 
 const failCnt = parseInt(getCookie("fail_cnt")) || 0;
     if (failCnt >= 3) {

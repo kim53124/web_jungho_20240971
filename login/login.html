@@ -2,11 +2,11 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>LOL 메인화면</title>
+    <title>로그인</title>
 
     <meta name="author" content="20240971">
     <meta name="keywords" content="computer">
-    <!-- <base href="http://127.0.0.1:5500"> -->
+    <base href="http://localhost:5500">
 
     <style>
         table {
@@ -29,7 +29,7 @@
 <!--                                           -->
 
 </head>
-<body class="text-center" onload="init();">
+<body class="text-center">
     <!-- Section: Design Block -->
 <section class="">
     <!-- Jumbotron -->
@@ -63,7 +63,7 @@
                       </div>
                     </div>
                   </div>
-   -->
+                  -->
                   <!-- Email input -->
                   <div data-mdb-input-init class="form-outline mb-4">
                     <input type="email" id="typeEmailX" class="form-control form-control-lg" name="id" />
@@ -83,6 +83,9 @@
                     </label>
                   </div>
                   <button style="background-color: black;" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" id="login_btn" type="button">로그인</button>
+                  <div>
+                    <p class="mb-0">계정이 없나요? <a href="../login/join.html" class="text-white-50 fw-bold">회원가입</a></p>
+                  </div>
   
                   <!-- Checkbox -->
                   <div class="form-check d-flex justify-content-center mb-4">
