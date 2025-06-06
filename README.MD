@@ -13,7 +13,7 @@ This project is a starting point for a Web application.
 2주차: 개발 환경 준비 및 HTML 기초
 
 기술 트렌드: AI의 발전과 활용 (머신러닝, 딥러닝, 자연어 처리, 이미지 인식), 생성형 AI (언어, 이미지/영상 합성), GitHub Copilot과 같은 AI 개발 도구 활용.
-HTML 기초: 웹 페이지의 기본 구조 학습. <img>, <h3> 태그를 이용한 이미지 삽입 및 헤드라인 설정. <body>, <div>, <h3> 태그의 스타일 속성을 활용한 기본적인 화면 구성. KO, UTF-8 문자셋 설정.
+HTML 기초: 웹 페이지의 기본 구조 학습. 'img', 'h3' 태그를 이용한 이미지 삽입 및 헤드라인 설정. 'body', 'div', 'h3' 태그의 스타일 속성을 활용한 기본적인 화면 구성. KO, UTF-8 문자셋 설정.
 
 3주차: 메타데이터와 하이퍼링크
 
@@ -24,7 +24,7 @@ GitHub README.MD: GitHub 프로젝트 설명을 위한 README.MD 파일의 중�
 4주차: 자바스크립트 기초 - 1
 
 기술 트렌드: 자바스크립트의 역할 (동적 웹 페이지 구현), ECMAScript (ES5, ES6+) 표준화 과정, 크로스 브라우징 문제와 jQuery의 등장.
-JavaScript 실행 순서: DOMContentLoaded와 window.onload 이벤트 이해. <script> 태그의 위치 (하단 또는 defer 속성)에 따른 DOM 접근 문제 해결 방안.
+JavaScript 실행 순서: DOMContentLoaded와 window.onload 이벤트 이해. 'script' 태그의 위치 (하단 또는 defer 속성)에 따른 DOM 접근 문제 해결 방안.
 GitHub README.MD 업데이트: 주차별 완료된 학습 내용을 README.MD에 기록하여 프로젝트 진행 상황을 관리.
 
 5주차: 자바스크립트 기초 - 2
